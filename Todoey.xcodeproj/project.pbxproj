@@ -12,6 +12,7 @@
 		175D99192055A06400277B82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175D99172055A06400277B82 /* Main.storyboard */; };
 		175D991B2055A06400277B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175D991A2055A06400277B82 /* Assets.xcassets */; };
 		175D991E2055A06400277B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175D991C2055A06400277B82 /* LaunchScreen.storyboard */; };
+		17F290F8207543CC0061BD16 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F290F7207543CB0061BD16 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		175D991A2055A06400277B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		175D991D2055A06400277B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		175D991F2055A06400277B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F290F7207543CB0061BD16 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				175D99132055A06400277B82 /* AppDelegate.swift */,
-				175D99152055A06400277B82 /* TodoListVC.swift */,
-				175D99172055A06400277B82 /* Main.storyboard */,
-				175D991A2055A06400277B82 /* Assets.xcassets */,
-				175D991C2055A06400277B82 /* LaunchScreen.storyboard */,
+				17F290F9207543DB0061BD16 /* Data Model */,
+				17F290FA207543FA0061BD16 /* Controllers */,
+				17F290FB207544100061BD16 /* Views */,
+				17F290FC2075443F0061BD16 /* Supporting Files */,
 				175D991F2055A06400277B82 /* Info.plist */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		17F290F9207543DB0061BD16 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				17F290F7207543CB0061BD16 /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		17F290FA207543FA0061BD16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				175D99152055A06400277B82 /* TodoListVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		17F290FB207544100061BD16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				175D99172055A06400277B82 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17F290FC2075443F0061BD16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				175D991A2055A06400277B82 /* Assets.xcassets */,
+				175D991C2055A06400277B82 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +126,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Florian Schweizer";
 				TargetAttributes = {
 					175D990F2055A06400277B82 = {
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				175D99162055A06400277B82 /* TodoListVC.swift in Sources */,
+				17F290F8207543CC0061BD16 /* Item.swift in Sources */,
 				175D99142055A06400277B82 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +213,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +221,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +272,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +280,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
